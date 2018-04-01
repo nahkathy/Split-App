@@ -12,4 +12,5 @@ let sharedData = Data()
 
 class Data: NSObject {
     var numberOfPeople: Int?
+    var image: Data?
 }
