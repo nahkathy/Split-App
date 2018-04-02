@@ -192,7 +192,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
 //            ]
 //        ]
     
-        let url = URL(string: "https://vision.googleapis.com/v1/images:annotate?key=AIzaSyADHzSNG4f__zxduaG2nDhMSoX08B5K1Yc")
+        let url = URL(string: "https://vision.googleapis.com/v1/images:annotate?key=(KEY GOES HERE)")
         var request = URLRequest(url: url!)
         request.httpMethod = "POST"
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
@@ -211,7 +211,6 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
             .responseJSON { response in
                 print("Response JSON: \(response.result.value)")
         }
-//https://vision.googleapis.com/v1/images:annotate?key=AIzaSyADHzSNG4f__zxduaG2nDhMSoX08B5K1Yc"
     }
     
     
